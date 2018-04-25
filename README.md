@@ -3,7 +3,7 @@
 
 ## Getting started
 
-Open [Live Version](https://rakunn.github.io/movie-guessing-game/) or clone this repo and open index.html file. Enjoy!
+Open [Live Version](https://rakunn.github.io/bugger-runaway-arcade/) or clone this repo and open index.html file. Enjoy!
 
 ## How to play
 
