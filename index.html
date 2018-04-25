@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Effective JavaScript: Frogger</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
+  <div class="ui basic modal inverted">
+    <h1 class="modal-title">
+      Bugger Runaway!
+    </h1>
+    <div class="ui icon header" id="hero-selection">
+      <i class="gamepad icon"></i>
+      <p>
+        Select your bugger:
+      </p>
+      <div class="ui five cards"></div>
+    </div>
+    <div class="content">
+      <p class="description">
+        Your task is to get through these dangerous bugs safely for 10 times! Watch out, you have only <strong>3</strong> lives!
+      </p>
+      <p class="description">
+        Are you ready for this adventure?
+      </p>
+    </div>
+    <div class="actions">
+      <div class="ui yellow ok button" id="start">
+        <i class="checkmark icon"></i>
+        Yes, go on!
+      </div>
+    </div>
+  </div>
+
+  <div class="ui tiny modal" id="win">
+    <h2 class="modal-title">Well done friend, you saved the day!</h2>
+    <div class="content">
+      <p class="description">Would you like to have another shot?</p>
+    </div>
+    <div class="actions">
+      <div class="ui approve green button" id="restart-win">Yes, go!</div>
+    </div>
+  </div>
+
+  <div class="ui tiny modal lose" id="lose">
+    <h2 class="modal-title">Oh no! You didn't make it!</h2>
+    <div class="content">
+      <p class="description">Would you like to try again?</p>
+    </div>
+    <div class="actions">
+      <div class="ui approve yellow button" id="restart-lose">Play again!</div>
+    </div>
+  </div>
+
+  <script src="js/resources.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/ui.js"></script>
 </body>
 </html>

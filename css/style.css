@@ -1,3 +1,36 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
 body {
+  text-align: center;
+  background-image: url(../images/gaming-pattern.png); /*This pattern is downloaded from www.toptal.com/designers/subtlepatterns/ */
+}
+
+h1.modal-title,
+h2.modal-title {
+  font-family: inherit;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    max-width: 600px;
+}
+
+.ui .cards .selected > .content {
+    background-color: #fbbd08;
+}
+
+.ui .cards .card > .image {
+    background-color: #fff;
+}
+
+.ui.modal>.actions {
     text-align: center;
 }
